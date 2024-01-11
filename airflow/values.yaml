@@ -1297,7 +1297,7 @@ logs:
   persistence:
     ## if a persistent volume is mounted at `logs.path`
     ##
-    enabled: true
+    enabled: false
 
     ## the name of an existing PVC to use
     ##
@@ -1335,7 +1335,7 @@ dags:
   persistence:
     ## if a persistent volume is mounted at `dags.path`
     ##
-    enabled: true
+    enabled: false
 
     ## the name of an existing PVC to use
     ##
@@ -1931,7 +1931,7 @@ postgresql:
     ## if postgres will use Persistent Volume Claims to store data
     ## - [WARNING] if false, data will be LOST as postgres Pods restart
     ##
-    enabled: true
+    enabled: false
 
     ## the name of the StorageClass used by the PVC
     ##
