@@ -263,10 +263,11 @@ persistence:
   #accessModes:
   #  - ReadWriteMany
   #mountPath: /opt/nifi
+  accessModes: [ReadWriteOnce]
   subPath:
     enabled: true
     name: data
-    size: 10Gi
+    size: 30Gi
   logStorage:
     size: 2Gi
   configStorage:
